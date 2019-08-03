@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>First Vue JS</title>
+</head>
+<body>
+<link rel="stylesheet" href="styles.css">
+
+    <div id="MyApp">
+        <h1>{{ greet() }} </h1> 
+
+        <p>Hello <span> <input v-model="name"> </span>, this is my first time in Vue. </p>
+        <ul> 
+            <li v-for="items in fruits_list"> {{ items }} </li>
+        </ul>
+
+        <p>Hobby: {{ hobby }}</p>
+
+        <button v-on:click="buttonClick"> Click ME!</button>
+    </div>
+    
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="vue.js"></script>
+</body>
+
+
+
+</html>
